@@ -63,6 +63,10 @@ class Dashboard extends Component {
    * @returns {*}
    */
   render() {
+    /**
+     * Map the themes
+     * @type {string}
+     */
     const themes = !_.isEmpty(this.state.themes) ? this.state.themes.map((theme, i) => {
       const owner = theme.owner === '_default' ? '' : theme.owner;
       return(
