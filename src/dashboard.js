@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Request from 'axios';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
-import { BASE } from './config';
 
+import { BASE } from './config';
 import './dashboard.css';
 
 /**
@@ -18,19 +18,25 @@ const API = `${BASE}/api/theme`;
 const TOKEN = '15151ca0-ffbf-4c13-ac7d-89b5e89a417c';
 
 class Dashboard extends Component {
+  /**
+   *
+   * @param props
+   */
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
+      error: false,
       themes: {}
     };
   }
 
   /**
-   *
+   * Async function to grab the dataset.
    * @returns {Promise<void>}
    */
   async componentDidMount() {
+    // Fetch data from the API
     try {
       const { data } = await Request.get(API, {
         headers: { 'Authorization': `Bearer ${ TOKEN }` }
@@ -73,6 +79,10 @@ class Dashboard extends Component {
         <div
           className="theme-card"
           key={ theme.guid } >
+          {
+            this.state.error ?
+              <div className="error">There was an error. Please try again</div> : ''
+          }
           <h4>
             { theme.title }
             <span className={ `theme-type ${theme.owner}`} />
