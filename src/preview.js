@@ -9,10 +9,8 @@ class Preview extends Component {
   render() {
     const { location } = this.props;
     const sel = location.state.theme;
-    console.log(sel);
     const format = 'MMMM Do YYYY, h:mm:ss';
     const formatTime = (timestamp) => {
-      console.log('time', timestamp);
       return moment(timestamp).format(format);
     };
     return(
