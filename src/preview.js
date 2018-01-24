@@ -23,16 +23,16 @@ class Preview extends Component {
           </h4>
           <p>
             <span
-              className="bold">Handle:</span>
+              className="bold">Handle: </span>
             { sel.handle }
           </p>
           <p>
             <span
-              className="bold">Created:</span>
+              className="bold">Created: </span>
             { formatTime(sel.created) }
             <br />
             <span
-              className="bold">Last Updated:</span>
+              className="bold">Last Updated: </span>
             { formatTime(sel.last_updated) }
           </p>
           <p className="bold">
@@ -40,7 +40,7 @@ class Preview extends Component {
           </p>
           <p>
             <span
-              className="bold">GUID:</span>
+              className="bold">GUID: </span>
             { sel.guid }
           </p>
         </section>
