@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 import Dashboard from './dashboard';
 import Preview from './preview';
@@ -19,10 +19,13 @@ class App extends Component {
         className="App">
         <header
           className="App-header">
-          <img
-            src={ logo }
-            className="App-logo"
-            alt="logo" />
+          <Link
+            to="/">
+            <img
+              src={ logo }
+              className="App-logo"
+              alt="logo" />
+          </Link>
           <h1
             className="App-title">
             Theme Picker

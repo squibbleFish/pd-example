@@ -1,24 +1,56 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 import { BASE } from './config';
 
+import './preview.css';
+
 class Preview extends Component {
-
-  componentDidMount() {
-
-  }
-
   render() {
     const { location } = this.props;
     const sel = location.state.theme;
     console.log(sel);
+    const format = 'MMMM Do YYYY, h:mm:ss';
+    const formatTime = (timestamp) => {
+      console.log('time', timestamp);
+      return moment(timestamp).format(format);
+    };
     return(
-      <div className="theme-preview">
-        <section className="flex">
-          
+      <div
+        className="theme-preview">
+        <section
+          className="flex">
+          <h4>
+            Theme Details
+          </h4>
+          <p>
+            <span
+              className="bold">Handle:</span>
+            { sel.handle }
+          </p>
+          <p>
+            <span
+              className="bold">Created:</span>
+            { formatTime(sel.created) }
+            <br />
+            <span
+              className="bold">Last Updated:</span>
+            { formatTime(sel.last_updated) }
+          </p>
+          <p className="bold">
+            { sel.description }
+          </p>
+          <p>
+            <span
+              className="bold">GUID:</span>
+            { sel.guid }
+          </p>
         </section>
-        <section className="flex frame">
-          <iframe src={ `${BASE}/theme/${sel.owner}/${sel.handle}` }/>
+        <section
+          className="flex frame">
+          <iframe
+            src={ `${BASE}/theme/${sel.owner}/${sel.handle}` }
+            frameBorder="0" />
         </section>
       </div>
     )

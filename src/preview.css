@@ -1,0 +1,28 @@
+.theme-preview {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex {
+  order: 2;
+  width: 47%;
+  padding: 0 16px;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.frame {
+  border: 1px solid #c3a312;
+  border-radius: 2px;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.bold {
+  font-weight: bold;
+}
