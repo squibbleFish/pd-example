@@ -1,4 +1,5 @@
-import { GET_THEMES, THROW_ERROR, FILTER_THEMES } from "../helpers/types";
+import { GET_THEMES, THROW_ERROR } from "../helpers/types";
+import { searchThemes } from "./search-actions";
 import Request from 'axios';
 
 import { API, TOKEN } from '../helpers/config';
@@ -23,4 +24,8 @@ export function getThemes() {
       })
     }
   }
+}
+
+export {
+  searchThemes
 }

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
-import _ from 'lodash';
 
 import * as actions from '../actions/search-actions';
 
@@ -16,8 +15,6 @@ class SearchBar extends Component {
 
   handleChange(e) {
     this.props.searchThemes(e.target.value);
-    let filter = _.filter(this.props.themes, t => _.toLower(t.title).includes(e.target.value.toLowerCase()));
-    this.props.filterThemes(filter);
   }
 
   render() {
@@ -48,10 +45,8 @@ function mapDispatchToProps(dispatch) {
 }
 
 SearchBar.propTypes = {
-  filterThemes: PropTypes.func,
   searchThemes: PropTypes.func,
   search: PropTypes.object,
-  themes: PropTypes.array,
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps, null, { withRef: true })(SearchBar))

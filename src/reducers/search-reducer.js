@@ -1,4 +1,4 @@
-import { FILTER_THEMES, SEARCH_THEMES } from "../helpers/types";
+import { SEARCH_THEMES } from "../helpers/types";
 
 const initialState = {
   search: {
@@ -12,12 +12,6 @@ export default function searchReducer(state = initialState, action = {}) {
       return {
         ...state,
         search: action.payload
-      };
-    case FILTER_THEMES:
-      const { payload } = action;
-      return {
-        ...state,
-        payload
       };
     default:
       return state;

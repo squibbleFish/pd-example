@@ -15,7 +15,7 @@ export const API = `${BASE}/api/theme`;
  * Theme preview URI
  * @type {string}
  */
-export const THEME_VIEW = `${BASE}/theme/`;
+export const THEME_VIEW = `${BASE}/theme`;
 
 /**
  * API token
