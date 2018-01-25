@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { BASE } from './config';
+import { THEME_VIEW } from '../helpers/config';
 
 import './preview.css';
 
@@ -47,7 +47,7 @@ class Preview extends Component {
         <section
           className="flex frame">
           <iframe
-            src={ `${BASE}/theme/${sel.owner}/${sel.handle}` }
+            src={ `${THEME_VIEW}/${sel.owner}/${sel.handle}` }
             frameBorder="0" />
         </section>
       </div>
