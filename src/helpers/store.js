@@ -7,8 +7,10 @@ import reducers from '../reducers/combine';
 import thunk from 'redux-thunk';
 
 const state = {
-  themes: [],
-  search: ''
+  themes: {},
+  search: {
+    search: ''
+  }
 };
 
 const middleware = [

@@ -20,6 +20,7 @@ class Dashboard extends Component {
     this.state = {
       loading: true,
       error: false,
+      displayed: [],
     };
   }
 
@@ -36,12 +37,30 @@ class Dashboard extends Component {
    * @param nextProps
    */
   componentWillReceiveProps(nextProps) {
+    /**
+     * Loader and initial theme load
+     */
     if (!_.isEmpty(nextProps.themes.themes)) {
       this.setState({
-        loading: false
+        loading: false,
+        displayed: nextProps.themes.themes
       })
     }
-    // Check for any errors and render the error
+
+    /**
+     * handles the search functionality
+     */
+    if(!_.isNil(nextProps.themes.search)) {
+      const term = nextProps.themes.search;
+      let filtered = _.filter(this.props.themes.themes, t => _.toLower(t.title).includes(term.toLowerCase()));
+      this.setState({
+        displayed: filtered
+      });
+    }
+
+    /**
+     *
+     */
     if (nextProps.themes.error) {
       this.setState({
         error: true
@@ -57,21 +76,17 @@ class Dashboard extends Component {
    * @returns {*}
    */
   render() {
-    const { themes } = this.props;
+    const themes = !_.isEmpty(this.state.displayed) ? this.state.displayed : [];
     /**
      * Map the themes
      * @type {string}
      */
-    const dash = !_.isEmpty(themes) ? themes.themes.map((theme) => {
+    const dash = !_.isEmpty(themes) ? themes.map((theme) => {
       const owner = theme.owner === '_default' ? '' : theme.owner;
       return(
         <div
           className="theme-card"
           key={ theme.guid } >
-          {
-            this.state.error ?
-              <div className="error">There was an error. Please try again</div> : ''
-          }
           <h4>
             { theme.title }
             <span className={ `theme-type ${ theme.owner }`} />
@@ -91,10 +106,16 @@ class Dashboard extends Component {
 
     return(
       <React.Fragment>
+        {
+          this.state.error ?
+            <div className="error">There was an error. Please try again</div> : ''
+        }
         <SearchBar />
-        <div className="theme-board">
+        <div
+          className="theme-board" >
           {
-            this.state.loading ? <Spinner /> : dash // Either of these could be components, but this is just slightly easier
+            // Either of these could be components, but this is just slightly easier
+            this.state.loading ? <Spinner /> : dash
           }
         </div>
       </React.Fragment>
@@ -112,6 +133,10 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(actions, dispatch);
 }
 
-Dashboard.propTypes = {};
+Dashboard.propTypes = {
+  getThemes: PropTypes.func,
+  searchThemes: PropTypes.func,
+  themes: PropTypes.object,
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps, null, { withRef: true})(Dashboard));
