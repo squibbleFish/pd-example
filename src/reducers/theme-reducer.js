@@ -1,7 +1,8 @@
-import { GET_THEMES } from "../helpers/types";
+import {FILTER_THEMES, GET_THEMES} from "../helpers/types";
 
 const initialState = {
-  themes: []
+  themes: {},
+  filtered: {}
 };
 
 export default function themeReducer(state = initialState, action = {}) {
@@ -10,6 +11,12 @@ export default function themeReducer(state = initialState, action = {}) {
       return {
         ...state,
         themes: action.payload
+      };
+    case FILTER_THEMES:
+      const {payload} = action;
+      return {
+        ...state,
+        payload
       };
     default:
       return state;

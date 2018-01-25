@@ -91,8 +91,10 @@ class Dashboard extends Component {
 
     return(
       <React.Fragment>
-        <SearchBar />
-        <div className="theme-board">
+        <SearchBar
+          themes={themes.themes} />
+        <div
+          className="theme-board" >
           {
             this.state.loading ? <Spinner /> : dash // Either of these could be components, but this is just slightly easier
           }
@@ -112,6 +114,9 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(actions, dispatch);
 }
 
-Dashboard.propTypes = {};
+Dashboard.propTypes = {
+  getThemes: PropTypes.func,
+  themes: PropTypes.object,
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps, null, { withRef: true})(Dashboard));
