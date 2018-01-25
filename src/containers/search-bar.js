@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router-dom';
 
 import * as actions from '../actions/search-actions';
+import './search-bar.css';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -20,10 +21,12 @@ class SearchBar extends Component {
   render() {
     return(
       <section
-        className="seach-bar">
+        className="search-bar">
         <input
           type="search"
           name="search"
+          className="search"
+          placeholder="Enter Your Search Term"
           value={ this.props.search.search }
           onChange={ this.handleChange } />
         <a

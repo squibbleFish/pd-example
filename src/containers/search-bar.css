@@ -1,0 +1,13 @@
+.search-bar {
+    order: 1;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+input.search {
+    padding: 13px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+}

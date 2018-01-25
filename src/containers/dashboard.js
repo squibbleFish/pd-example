@@ -110,9 +110,9 @@ class Dashboard extends Component {
           this.state.error ?
             <div className="error">There was an error. Please try again</div> : ''
         }
-        <SearchBar />
         <div
           className="theme-board" >
+          <SearchBar />
           {
             // Either of these could be components, but this is just slightly easier
             this.state.loading ? <Spinner /> : dash

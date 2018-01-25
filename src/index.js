@@ -13,6 +13,11 @@ import './index.css';
 
 const history = createHistory({ basename: '/' });
 
+store.subscribe(() => {
+  localStorage.setItem('state', JSON.stringify(store.getState()));
+});
+console.log(store.getState());
+
 ReactDOM.render(
   <Provider store={store}>
     <Router
