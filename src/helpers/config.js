@@ -22,3 +22,8 @@ export const THEME_VIEW = `${BASE}/theme`;
  * @type {string}
  */
 export const TOKEN = '15151ca0-ffbf-4c13-ac7d-89b5e89a417c';
+
+/**
+ * Main cache key
+ */
+export const CACHE_KEY = 'pd-local';

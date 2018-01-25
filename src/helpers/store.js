@@ -6,8 +6,13 @@ import {
 import reducers from '../reducers/combine';
 import thunk from 'redux-thunk';
 
+const initialState = {
+  themes: {},
+  search: { search: '' }
+};
+
 const preloadedState = localStorage.getItem('state') ?
-  JSON.parse(localStorage.getItem('state')) : {};
+  JSON.parse(localStorage.getItem('state')) : initialState;
 
 const middleware = [
   thunk

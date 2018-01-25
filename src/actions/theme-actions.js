@@ -1,26 +1,35 @@
-import { GET_THEMES, THROW_ERROR } from "../helpers/types";
-import { searchThemes } from "./search-actions";
 import Request from 'axios';
+import _ from 'lodash';
 
-import { API, TOKEN } from '../helpers/config';
+import { searchThemes } from "./search-actions";
+import { GET_THEMES, THROW_ERROR } from "../helpers/types";
+import { API, TOKEN, CACHE_KEY } from '../helpers/config';
 
 export function getThemes() {
   return async (dispatch) => {
-    try {
-      const { data } = await Request.get(API, {
-        headers: { 'Authorization': `Bearer ${ TOKEN }` }
-      });
+    const cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (_.isNil(cached)) {
+      try {
+        const { data } = await Request.get(API, {
+          headers: { 'Authorization': `Bearer ${ TOKEN }` }
+        });
+        dispatch({
+          type: GET_THEMES,
+          payload: data.rows
+        })
+      } catch (e) {
+        dispatch({
+          type: THROW_ERROR,
+          payload: {
+            error: true,
+            trace: e
+          }
+        })
+      }
+    } else {
       dispatch({
         type: GET_THEMES,
-        payload: data.rows
-      })
-    } catch (e) {
-      dispatch({
-        type: THROW_ERROR,
-        payload: {
-          error: true,
-          trace: e
-        }
+        payload: cached.themes.themes
       })
     }
   }
