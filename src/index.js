@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 
 import store from "./helpers/store";
 
-import { App } from './components/app';
+import App from './components/app';
 import { CACHE_KEY } from "./helpers/config";
 import registerServiceWorker from './registerServiceWorker';
 
