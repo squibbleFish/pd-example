@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Route, Switch, Link} from 'react-router-dom';
 
 import Dashboard from '../containers/dashboard';
@@ -8,7 +8,7 @@ import NotFound from './not-found';
 import logo from '../images/pagedip-logo.png';
 import './app.css';
 
-export const App = () => {
+export default function App() {
   return (
     <div
       className="App">
@@ -42,4 +42,4 @@ export const App = () => {
       </div>
     </div>
   );
-};
+}

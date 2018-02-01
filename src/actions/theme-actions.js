@@ -7,7 +7,12 @@ import { API, TOKEN, CACHE_KEY } from '../helpers/config';
 
 export function getThemes() {
   return async (dispatch) => {
-    const cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+    let cached = null;
+    try {
+      cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+    } catch (e) {
+      console.log(e);
+    }
     /**
      * @todo: This can really be cleaned up. Too much logic
      */
