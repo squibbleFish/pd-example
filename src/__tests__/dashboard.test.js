@@ -46,7 +46,9 @@ describe('render dashboard', () => {
     let mock = new MockAdapter(axios);
     mock.onGet(API).reply(200,{
       rows: mockedJson
-    });
+    }, {
+      headers: { 'content-type': 'application/json' }
+    } );
 
     const expected = [{ type: types.GET_THEMES, payload: mockedJson }];
     const store = mockStore({ themes: { themes: [] } });
