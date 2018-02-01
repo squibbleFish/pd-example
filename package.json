@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "jest-mock-axios": "^1.0.21",
     "lodash": "^4.17.4",
     "moment": "^2.20.1",
     "prop-types": "^15.6.0",
