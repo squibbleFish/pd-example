@@ -82,5 +82,5 @@ describe('render dashboard', () => {
     expect(
       reducer({}, getSearchAction)
     ).toEqual(term);
-  })
+  });
 });

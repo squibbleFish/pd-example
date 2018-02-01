@@ -10,9 +10,7 @@ export function getThemes() {
     let cached = null;
     try {
       cached = JSON.parse(localStorage.getItem(CACHE_KEY));
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
     /**
      * @todo: This can really be cleaned up. Too much logic
      */
