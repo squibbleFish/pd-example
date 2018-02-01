@@ -2,14 +2,13 @@ import React from 'react';
 import configureMockStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { withRouter, Link } from 'react-router';
-import fetchMock from 'fetch-mock';
+import { Link } from 'react-router';
 import thunk from 'redux-thunk';
+import MockAdapter from 'axios-mock-adapter';
+import axios from 'axios';
 
+import { API } from '../helpers/config';
 import * as actions from '../actions/theme-actions';
-import SearchBar from '../containers/search-bar';
-import { Spinner } from '../components/spinner';
-
 import * as types from "../helpers/types";
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -41,15 +40,16 @@ const mockedJson = [{
 
 describe('render dashboard', () => {
   it('fetch themes', () => {
-    fetchMock
-      .getOnce('/', { payload: mockedJson });
+    let mock = new MockAdapter(axios);
+    mock.onGet(API).reply(200,{
+      rows: mockedJson
+    });
 
-    const expected = { type: types.GET_THEMES, payload: { themes: mockedJson } };
-
-    const store = mockStore({themes: { themes: [] } });
+    const expected = [{ type: types.GET_THEMES, payload: mockedJson }];
+    const store = mockStore({ themes: { themes: [] } });
     return store.dispatch(actions.getThemes())
       .then(() => {
         expect(store.getActions()).toEqual(expected);
       });
-  })
+  });
 });
