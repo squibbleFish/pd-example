@@ -1,7 +1,6 @@
 import React from 'react';
 import configureMockStore from 'redux-mock-store';
-import { shallow, mount } from 'enzyme';
-import { withRouter, Link } from 'react-router';
+import { Link } from 'react-router';
 import thunk from 'redux-thunk';
 import MockAdapter from 'axios-mock-adapter';
 import axios from 'axios';
@@ -10,9 +9,6 @@ import { API } from '../helpers/config';
 import * as types from "../helpers/types";
 import * as actions from '../actions/theme-actions';
 import reducer from '../reducers/theme-reducer';
-
-import Dashboard from '../containers/dashboard';
-import {GET_THEMES} from "../helpers/types";
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);

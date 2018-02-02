@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Dashboard
+    getThemes={[Function]}
+    search={
+        Object {
+            "search": "",
+          }
+    }
+    themes={
+        Object {
+            "themes": Object {
+              "mockedJson": Object {
+                "themes": Array [
+                  Object {
+                    "created": "2018-01-19T21:58:28.528Z",
+                    "description": "A theme ready for action, with a hero cover image and a sidebar.",
+                    "guid": "e11ca530-fd63-11e7-a5be-e53eb9f02238",
+                    "handle": "sidekick",
+                    "last_updated": "2018-01-19T21:58:31.792Z",
+                    "main": "73ac0428-8400-4202-abde-7ca1bf46ad09",
+                    "owner": "_default",
+                    "title": "Sidekick",
+                    "type": "theme",
+                  },
+                ],
+              },
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        "",
+        <div
+          className="theme-board"
+>
+          <withRouter(Connect(SearchBar)) />
+          <Unknown />
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <withRouter(Connect(SearchBar)) />,
+            <Unknown />,
+          ],
+          "className": "theme-board",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          "",
+          <div
+            className="theme-board"
+>
+            <withRouter(Connect(SearchBar)) />
+            <Unknown />
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <withRouter(Connect(SearchBar)) />,
+              <Unknown />,
+            ],
+            "className": "theme-board",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

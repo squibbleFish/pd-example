@@ -10,7 +10,7 @@ import SearchBar from './search-bar';
 import { Spinner } from '../components/spinner';
 import './dashboard.css';
 
-class Dashboard extends Component {
+export class Dashboard extends Component {
   /**
    *
    * @param props
