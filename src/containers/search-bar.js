@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 import * as actions from '../actions/search-actions';
 import './search-bar.css';
 
-class SearchBar extends Component {
+export class SearchBar extends Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);

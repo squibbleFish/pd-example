@@ -1,0 +1,1662 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders a search bar should handle onchange 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <SearchBar
+    search={
+        Object {
+            "search": "",
+          }
+    }
+    searchThemes={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": SearchBar {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 4,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 3,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "search": Object {
+                "search": "",
+              },
+              "searchThemes": [Function],
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "search": Object {
+                "search": "",
+              },
+              "searchThemes": [Function],
+            },
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <section
+                                    class="search-bar"
+                  >
+                                    <input
+                                                      type="search"
+                                                      name="search"
+                                                      class="search"
+                                                      placeholder="Enter Your Search Term"
+                                                      value=""
+                                    />
+                                    <a
+                                                      href="#"
+                                    />
+                  </section>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                                            Object {
+                                                                  "search": Object {
+                                                                    "search": "",
+                                                                  },
+                                                                  "searchThemes": [Function],
+                                                                }
+                      }
+/>,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                                            Object {
+                                                                  "search": Object {
+                                                                    "search": "",
+                                                                  },
+                                                                  "searchThemes": [Function],
+                                                                }
+                      }
+/>,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                                Object {
+                                                "search": Object {
+                                                  "search": "",
+                                                },
+                                                "searchThemes": [Function],
+                                              }
+                }
+/>,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <section
+                                class="search-bar"
+                >
+                                <input
+                                                type="search"
+                                                name="search"
+                                                class="search"
+                                                placeholder="Enter Your Search Term"
+                                                value=""
+                                />
+                                <a
+                                                href="#"
+                                />
+                </section>
+</div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 5,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": Object {
+            "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+            "lineNumber": 23,
+          },
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 6,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+              "lineNumber": 25,
+            },
+            "alternate": null,
+            "child": null,
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "className": "search",
+              "name": "search",
+              "onChange": [Function],
+              "placeholder": "Enter Your Search Term",
+              "type": "search",
+              "value": "",
+            },
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": FiberNode {
+              "_debugID": 7,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+                "lineNumber": 32,
+              },
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "href": "#",
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": <a
+                href="#"
+/>,
+              "tag": 5,
+              "type": "a",
+              "updateQueue": null,
+            },
+            "stateNode": <input
+              type="search"
+              name="search"
+              class="search"
+              placeholder="Enter Your Search Term"
+              value=""
+/>,
+            "tag": 5,
+            "type": "input",
+            "updateQueue": null,
+          },
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              <input
+                className="search"
+                name="search"
+                onChange={[Function]}
+                placeholder="Enter Your Search Term"
+                type="search"
+                value=""
+/>,
+              <a
+                href="#"
+/>,
+            ],
+            "className": "search-bar",
+          },
+          "memoizedState": null,
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": <section
+            class="search-bar"
+>
+            <input
+                        type="search"
+                        name="search"
+                        class="search"
+                        placeholder="Enter Your Search Term"
+                        value=""
+            />
+            <a
+                        href="#"
+            />
+</section>,
+          "tag": 5,
+          "type": "section",
+          "updateQueue": null,
+        },
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "internalContextTag": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {
+          "search": Object {
+            "search": "",
+          },
+          "searchThemes": [Function],
+        },
+        "memoizedState": null,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 3,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "search": Object {
+                "search": "",
+              },
+              "searchThemes": [Function],
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "search": Object {
+                "search": "",
+              },
+              "searchThemes": [Function],
+            },
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <section
+                                    class="search-bar"
+                  >
+                                    <input
+                                                      type="search"
+                                                      name="search"
+                                                      class="search"
+                                                      placeholder="Enter Your Search Term"
+                                                      value=""
+                                    />
+                                    <a
+                                                      href="#"
+                                    />
+                  </section>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                                            Object {
+                                                                  "search": Object {
+                                                                    "search": "",
+                                                                  },
+                                                                  "searchThemes": [Function],
+                                                                }
+                      }
+/>,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                                            Object {
+                                                                  "search": Object {
+                                                                    "search": "",
+                                                                  },
+                                                                  "searchThemes": [Function],
+                                                                }
+                      }
+/>,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                                Object {
+                                                "search": Object {
+                                                  "search": "",
+                                                },
+                                                "searchThemes": [Function],
+                                              }
+                }
+/>,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <section
+                                class="search-bar"
+                >
+                                <input
+                                                type="search"
+                                                name="search"
+                                                class="search"
+                                                placeholder="Enter Your Search Term"
+                                                value=""
+                                />
+                                <a
+                                                href="#"
+                                />
+                </section>
+</div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 2,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "handleChange": [Function],
+      "props": Object {
+        "search": Object {
+          "search": "",
+        },
+        "searchThemes": [Function],
+      },
+      "refs": Object {},
+      "state": null,
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "search": Object {
+        "search": "",
+      },
+      "searchThemes": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <section
+        class="search-bar"
+>
+        <input
+                type="search"
+                name="search"
+                class="search"
+                placeholder="Enter Your Search Term"
+                value=""
+        />
+        <a
+                href="#"
+        />
+</section>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            className="search"
+            name="search"
+            onChange={[Function]}
+            placeholder="Enter Your Search Term"
+            type="search"
+            value=""
+/>,
+          <a
+            href="#"
+/>,
+        ],
+        "className": "search-bar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <input
+            type="search"
+            name="search"
+            class="search"
+            placeholder="Enter Your Search Term"
+            value=""
+/>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "search",
+            "name": "search",
+            "onChange": [Function],
+            "placeholder": "Enter Your Search Term",
+            "type": "search",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "input",
+        },
+        Object {
+          "instance": <a
+            href="#"
+/>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "href": "#",
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "a",
+        },
+      ],
+      "type": "section",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": SearchBar {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 4,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 3,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <section
+                                        class="search-bar"
+                    >
+                                        <input
+                                                            type="search"
+                                                            name="search"
+                                                            class="search"
+                                                            placeholder="Enter Your Search Term"
+                                                            value=""
+                                        />
+                                        <a
+                                                            href="#"
+                                        />
+                    </section>
+</div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                                                Object {
+                                                                        "search": Object {
+                                                                          "search": "",
+                                                                        },
+                                                                        "searchThemes": [Function],
+                                                                      }
+                        }
+/>,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                                                Object {
+                                                                        "search": Object {
+                                                                          "search": "",
+                                                                        },
+                                                                        "searchThemes": [Function],
+                                                                      }
+                        }
+/>,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                                    Object {
+                                                      "search": Object {
+                                                        "search": "",
+                                                      },
+                                                      "searchThemes": [Function],
+                                                    }
+                  }
+/>,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <section
+                                    class="search-bar"
+                  >
+                                    <input
+                                                      type="search"
+                                                      name="search"
+                                                      class="search"
+                                                      placeholder="Enter Your Search Term"
+                                                      value=""
+                                    />
+                                    <a
+                                                      href="#"
+                                    />
+                  </section>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "search": Object {
+                    "search": "",
+                  },
+                  "searchThemes": [Function],
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "search": Object {
+                    "search": "",
+                  },
+                  "searchThemes": [Function],
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 5,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+              "lineNumber": 23,
+            },
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 6,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+                "lineNumber": 25,
+              },
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "className": "search",
+                "name": "search",
+                "onChange": [Function],
+                "placeholder": "Enter Your Search Term",
+                "type": "search",
+                "value": "",
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 7,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/Users/stephenf/Documents/pd-example/src/containers/search-bar.js",
+                  "lineNumber": 32,
+                },
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "href": "#",
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <a
+                  href="#"
+/>,
+                "tag": 5,
+                "type": "a",
+                "updateQueue": null,
+              },
+              "stateNode": <input
+                type="search"
+                name="search"
+                class="search"
+                placeholder="Enter Your Search Term"
+                value=""
+/>,
+              "tag": 5,
+              "type": "input",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <input
+                  className="search"
+                  name="search"
+                  onChange={[Function]}
+                  placeholder="Enter Your Search Term"
+                  type="search"
+                  value=""
+/>,
+                <a
+                  href="#"
+/>,
+              ],
+              "className": "search-bar",
+            },
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": <section
+              class="search-bar"
+>
+              <input
+                            type="search"
+                            name="search"
+                            class="search"
+                            placeholder="Enter Your Search Term"
+                            value=""
+              />
+              <a
+                            href="#"
+              />
+</section>,
+            "tag": 5,
+            "type": "section",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "search": Object {
+              "search": "",
+            },
+            "searchThemes": [Function],
+          },
+          "memoizedState": null,
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 3,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "search": Object {
+                  "search": "",
+                },
+                "searchThemes": [Function],
+              },
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <section
+                                        class="search-bar"
+                    >
+                                        <input
+                                                            type="search"
+                                                            name="search"
+                                                            class="search"
+                                                            placeholder="Enter Your Search Term"
+                                                            value=""
+                                        />
+                                        <a
+                                                            href="#"
+                                        />
+                    </section>
+</div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                                                Object {
+                                                                        "search": Object {
+                                                                          "search": "",
+                                                                        },
+                                                                        "searchThemes": [Function],
+                                                                      }
+                        }
+/>,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                                                Object {
+                                                                        "search": Object {
+                                                                          "search": "",
+                                                                        },
+                                                                        "searchThemes": [Function],
+                                                                      }
+                        }
+/>,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                                    Object {
+                                                      "search": Object {
+                                                        "search": "",
+                                                      },
+                                                      "searchThemes": [Function],
+                                                    }
+                  }
+/>,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <section
+                                    class="search-bar"
+                  >
+                                    <input
+                                                      type="search"
+                                                      name="search"
+                                                      class="search"
+                                                      placeholder="Enter Your Search Term"
+                                                      value=""
+                                    />
+                                    <a
+                                                      href="#"
+                                    />
+                  </section>
+</div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "search": Object {
+                    "search": "",
+                  },
+                  "searchThemes": [Function],
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "search": Object {
+                    "search": "",
+                  },
+                  "searchThemes": [Function],
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "handleChange": [Function],
+        "props": Object {
+          "search": Object {
+            "search": "",
+          },
+          "searchThemes": [Function],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "search": Object {
+          "search": "",
+        },
+        "searchThemes": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <section
+          class="search-bar"
+>
+          <input
+                    type="search"
+                    name="search"
+                    class="search"
+                    placeholder="Enter Your Search Term"
+                    value=""
+          />
+          <a
+                    href="#"
+          />
+</section>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className="search"
+              name="search"
+              onChange={[Function]}
+              placeholder="Enter Your Search Term"
+              type="search"
+              value=""
+/>,
+            <a
+              href="#"
+/>,
+          ],
+          "className": "search-bar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <input
+              type="search"
+              name="search"
+              class="search"
+              placeholder="Enter Your Search Term"
+              value=""
+/>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "search",
+              "name": "search",
+              "onChange": [Function],
+              "placeholder": "Enter Your Search Term",
+              "type": "search",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "input",
+          },
+          Object {
+            "instance": <a
+              href="#"
+/>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "href": "#",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "a",
+          },
+        ],
+        "type": "section",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Renders a search bar should render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBar
+    search={
+        Object {
+            "search": "",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <input
+          className="search"
+          name="search"
+          onChange={[Function]}
+          placeholder="Enter Your Search Term"
+          type="search"
+          value=""
+/>,
+        <a
+          href="#"
+/>,
+      ],
+      "className": "search-bar",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "search",
+          "name": "search",
+          "onChange": [Function],
+          "placeholder": "Enter Your Search Term",
+          "type": "search",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "href": "#",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "a",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            className="search"
+            name="search"
+            onChange={[Function]}
+            placeholder="Enter Your Search Term"
+            type="search"
+            value=""
+/>,
+          <a
+            href="#"
+/>,
+        ],
+        "className": "search-bar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "search",
+            "name": "search",
+            "onChange": [Function],
+            "placeholder": "Enter Your Search Term",
+            "type": "search",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "href": "#",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "a",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
